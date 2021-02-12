@@ -1,13 +1,32 @@
+/* Note:  Implement some variables sooner rather than later for color */
 body {
-    color: #232931;
-    background-color: #D0D0D0;
+    color: #D0D0D0;
+    background-color: #222;
+    max-width: 624px;
+}
+
+h1 {
+    color: #2BBC8A;
 }
 
 hr {
     border-style: dotted none none;
     width: 5%;
-    border-color: #232931;
+    border-color: #2BBC8A;
     border-width: 7px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
+q::before {content: open-quote;}
+q::after {content: close-quote;}
+
+a { color:#D0D0D0 } /* Globally */
+
+/* Each state */
+
+a:visited { text-decoration: none; color: #D0D0D0; }
+a:hover { text-decoration: none; color: #2BBC8A; }
+a:focus { text-decoration: none; color: #2BBC8A; }
+a:hover, a:active { text-decoration: none; color: #2BBC8A; }
