@@ -6,13 +6,14 @@
 }
 
 body {
-    color: #F8F8F8;
+    color: #fff;
     background-color: #111;
     max-width: 600px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.15em;
     line-height: 1.4;
+    font-weight: 300;
 }
 
 img {
@@ -45,7 +46,7 @@ nav {
 h1 {
     color: #2BBC8A;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 100;
     text-transform: uppercase;
 }
@@ -64,11 +65,11 @@ hr {
 q::before {content: open-quote;}
 q::after {content: close-quote;}
 
-a { color:#f8f8f8; text-decoration: none; } /* Globally */
+a { color:#fff; text-decoration: none; } /* Globally */
 
 /* Each state */
 
-a:visited { text-decoration: none; color: #f8f8f8; }
+a:visited { text-decoration: none; color: #fff; }
 a:hover { text-decoration: none; color: #2BBC8A; }
 a:focus { text-decoration: none; color: #2BBC8A; }
 a:hover, a:active { text-decoration: none; color: #2BBC8A; }
