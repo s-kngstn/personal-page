@@ -1,13 +1,41 @@
 /* Note:  Implement some variables sooner rather than later for color */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    color: #D0D0D0;
-    background-color: #222;
+    color: #F8F8F8;
+    background-color: #111;
     max-width: 624px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navi li {
+    margin: 8px;
 }
 
 h1 {
     color: #2BBC8A;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+    text-transform: uppercase;
 }
+
 
 hr {
     border-style: dotted none none;
@@ -22,11 +50,11 @@ hr {
 q::before {content: open-quote;}
 q::after {content: close-quote;}
 
-a { color:#D0D0D0 } /* Globally */
+a { color:#f8f8f8; text-decoration: none; } /* Globally */
 
 /* Each state */
 
-a:visited { text-decoration: none; color: #D0D0D0; }
+a:visited { text-decoration: none; color: #f8f8f8; }
 a:hover { text-decoration: none; color: #2BBC8A; }
 a:focus { text-decoration: none; color: #2BBC8A; }
 a:hover, a:active { text-decoration: none; color: #2BBC8A; }
