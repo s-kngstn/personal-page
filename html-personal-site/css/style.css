@@ -28,7 +28,9 @@ li {
 nav {
     margin-bottom: 3rem;
 }
-
+.logo {
+    margin-top: 2rem;
+}
 .navi {
     display: flex;
     flex-direction: row;
@@ -61,6 +63,9 @@ hr {
     margin-bottom: 20px;
 }
 
+main {
+    margin: 0 1rem;
+}
 
 q::before {content: open-quote;}
 q::after {content: close-quote;}

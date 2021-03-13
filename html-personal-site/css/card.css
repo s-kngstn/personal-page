@@ -9,18 +9,20 @@ body {
   background: #111; 
   color: #f8f8f8;
   display: flex;
-  padding: 30px;
+  padding: 10px;
   justify-content: space-around;
   font-family: 'Montserrat', sans-serif;
+  width: 0 auto;
 }
 
 .wrapper {
-  margin-top: 5%;
+  max-width: 600px;
+  margin: 5% 1rem 0 1rem;
 }
 
 .name {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 100;
   letter-spacing: 2px;
@@ -28,7 +30,8 @@ body {
 
 .profession {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  letter-spacing: 1.2px;
 }
 
 .icons {
@@ -39,7 +42,7 @@ body {
 }
 
 .icons i {
-  padding: 30px 20px;
+  padding: 25px 40px;
   color: #f8f8f8;
 }
 
@@ -50,7 +53,7 @@ i:hover {
 
 
 .image {
-  width: 25rem;
+  width: 100%;
   height: auto;
   border-radius: 1.5px;
 }
