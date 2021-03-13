@@ -67,14 +67,32 @@ main {
     margin: 0 1rem;
 }
 
+/* Quotes */
 q::before {content: open-quote;}
 q::after {content: close-quote;}
 
-a { color:#fff; text-decoration: none; } /* Globally */
+a { 
+    color:#fff; 
+    text-decoration: none; 
+}
 
 /* Each state */
 
-a:visited { text-decoration: none; color: #fff; }
-a:hover { text-decoration: none; color: #2BBC8A; }
-a:focus { text-decoration: none; color: #2BBC8A; }
-a:hover, a:active { text-decoration: none; color: #2BBC8A; }
+a:visited { 
+    text-decoration: none; 
+    color: #fff; 
+}
+a:hover { 
+    text-decoration: none; 
+    color: #2BBC8A; 
+    transition: ease-in color 0.5s; 
+}
+a:focus { 
+    text-decoration: none; 
+    color: #2BBC8A;
+}
+a:hover, a:active { 
+    text-decoration: none; 
+    color: #2BBC8A;
+    transition: ease-in color 0.5s;
+}
