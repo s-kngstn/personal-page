@@ -1,4 +1,18 @@
-/* Note:  Implement some variables sooner rather than later for color */
+:root {
+  --primary: #2BBC8A;
+  --white: #ffffff;
+  --black: #111111;
+}
+
+::selection {
+  background: var(--primary);
+}
+
+::-moz-selection {
+  background: var(--primary);
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,8 +20,8 @@
 }
 
 body {
-    color: #fff;
-    background-color: #111;
+    color: var(--white);
+    background-color: var(--black);
     max-width: 600px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
@@ -16,21 +30,66 @@ body {
     font-weight: 300;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+/* --------- UTILITY ----------- */
+
+hr {
+    border-style: dotted none none;
+    width: 5%;
+    border-color: var(--primary);
+    border-width: 7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 li {
     list-style-type: none;
 }
 
+/* Quotes */
+q::before {content: open-quote;}
+q::after {content: close-quote;}
+
+/* Links */
+
+a, a:visited { 
+    color: var(--white); 
+    text-decoration: none; 
+}
+
+a:focus { 
+    text-decoration: none; 
+    color: var(--primary);
+}
+a:hover, a:active { 
+    text-decoration: none; 
+    color: var(--primary);
+    transition: ease-in color 0.5s;
+}
+
+/* images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --------- LOGO ----------- */
+
+.logo {
+    margin-top: 2rem;
+    color: var(--primary);
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/* ------ NAVIGATION ------ */
+
 nav {
     margin-bottom: 3rem;
 }
-.logo {
-    margin-top: 2rem;
-}
+
 .navi {
     display: flex;
     flex-direction: row;
@@ -42,57 +101,11 @@ nav {
 }
 
 .current {
-    color: #2BBC8A;
+    color: var(--primary);
 }
 
-h1 {
-    color: #2BBC8A;
-    text-align: center;
-    font-size: 2.8rem;
-    font-weight: 100;
-    text-transform: uppercase;
-}
-
-
-hr {
-    border-style: dotted none none;
-    width: 5%;
-    border-color: #2BBC8A;
-    border-width: 7px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+/* -------- MAIN -------- */
 
 main {
     margin: 0 1rem;
-}
-
-/* Quotes */
-q::before {content: open-quote;}
-q::after {content: close-quote;}
-
-a { 
-    color:#fff; 
-    text-decoration: none; 
-}
-
-/* Each state */
-
-a:visited { 
-    text-decoration: none; 
-    color: #fff; 
-}
-a:hover { 
-    text-decoration: none; 
-    color: #2BBC8A; 
-    transition: ease-in color 0.5s; 
-}
-a:focus { 
-    text-decoration: none; 
-    color: #2BBC8A;
-}
-a:hover, a:active { 
-    text-decoration: none; 
-    color: #2BBC8A;
-    transition: ease-in color 0.5s;
 }
