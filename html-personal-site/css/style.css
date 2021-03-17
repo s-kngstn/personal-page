@@ -42,7 +42,8 @@ hr {
 }
 
 li {
-    list-style-type: none;
+    list-style-type: lower-roman;
+    list-style-position: inside; 
 }
 
 /* Quotes */
@@ -73,14 +74,17 @@ img {
     height: auto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+    color: var(--primary);
+}
+
 /* --------- LOGO ----------- */
 
 .logo {
     margin-top: 2rem;
-    color: var(--primary);
     text-align: center;
     font-size: 2.8rem;
-    font-weight: 100;
     text-transform: uppercase;
 }
 
@@ -98,6 +102,7 @@ nav {
 
 .navi li {
     margin: 8px;
+    list-style-type: none;
 }
 
 .current {
@@ -108,4 +113,9 @@ nav {
 
 main {
     margin: 0 1rem;
+}
+
+.page-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
