@@ -2,6 +2,7 @@
   --primary: #2BBC8A;
   --white: #ffffff;
   --black: #111111;
+  --another: #ffd05b;
 }
 
 ::selection {
@@ -22,7 +23,6 @@
 body {
     color: var(--white);
     background-color: var(--black);
-    max-width: 600px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.15em;
@@ -50,21 +50,30 @@ li {
 q::before {content: open-quote;}
 q::after {content: close-quote;}
 
+.container {
+    padding-bottom: 1.5rem;
+}
+
 /* Links */
 
-a, a:visited { 
+a,a:visited { 
     color: var(--white); 
     text-decoration: none; 
 }
 
 a:focus { 
     text-decoration: none; 
-    color: var(--primary);
+    color: var(--white);
 }
 a:hover, a:active { 
     text-decoration: none; 
-    color: var(--primary);
+    color: var(--white);
+    font-weight: bold;
     transition: ease-in color 0.5s;
+}
+
+.git-link {
+    padding-right: 1rem;
 }
 
 /* images */
@@ -76,7 +85,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
-    color: var(--primary);
+    color: var(--white);
 }
 
 /* --------- LOGO ----------- */
@@ -91,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ------ NAVIGATION ------ */
 
 nav {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .navi {
@@ -112,10 +121,28 @@ nav {
 /* -------- MAIN -------- */
 
 main {
-    margin: 0 1rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 600px;
 }
 
 .page-heading {
     font-size: 2rem;
     margin-bottom: 2rem;
+}
+
+.page-subheading {
+    font-size:  1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* ------- FOOTER -------- */
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem;
 }
