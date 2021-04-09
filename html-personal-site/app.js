@@ -1,5 +1,5 @@
 const elements = document.querySelectorAll("a, hr, .logo");
-const colChangeElements = document.querySelectorAll("hr, .logo, .page-subheading");
+const colChangeElements = document.querySelectorAll("hr, .logo, .page-subheading, .bio-toggler");
 const colors = ['#2BBC8A', '#ffd05b', '#5555FF', '#D980FA', '#ff5353'];
 
 (function(){
@@ -7,13 +7,12 @@ const colors = ['#2BBC8A', '#ffd05b', '#5555FF', '#D980FA', '#ff5353'];
 
   setInterval(function(){
     randomPhoto();
-  }, 6000);
+  }, 3000);
 
   setInterval(function(){
     setRandomColors();
   }, 4000);
 })();
-
 
 function randomColor(){
   return colors[Math.floor(Math.random() * colors.length)];
@@ -32,7 +31,29 @@ Array.from(elements).forEach(function(element){
   });
 });
 
+// Shuffle Photos
+
 function randomPhoto(){
   let num = Math.floor(Math.random() * 4) + 1;
   document.getElementById("about-img").src = `images/me${num}.jpg`;
 }
+
+// Bio Toggler 
+
+const toggleButton = document.getElementById("toggle");
+const longBio = document.getElementById("long-bio");
+longBio.style.display = "none";
+
+function theToggler() {
+  if (longBio.style.display === "none") {
+    longBio.style.display = "block";
+    toggleButton.innerHTML = "Tell me less";
+  } else {
+    longBio.style.display = "none";
+    toggleButton.innerHTML = "Tell me more";
+  }
+}
+
+toggleButton.addEventListener("mousedown", function(){
+  theToggler();
+});

@@ -2,7 +2,6 @@
   --primary: #2BBC8A;
   --white: #ffffff;
   --black: #111111;
-  --another: #ffd05b;
 }
 
 ::selection {
@@ -20,14 +19,24 @@
     padding: 0;
 }
 
-body {
+.night {
     color: var(--white);
     background-color: var(--black);
+}
+
+.day {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+body {
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.15em;
     line-height: 1.4;
     font-weight: 300;
+    letter-spacing: 1px;
+    cursor: url("/images/glitch-pointer.png"), auto;
 }
 
 /* --------- UTILITY ----------- */
@@ -70,6 +79,7 @@ a:hover, a:active {
     color: var(--white);
     font-weight: bold;
     transition: ease-in color 0.5s;
+    cursor: url("/images/hover-cursor.png"), auto;
 }
 
 .icon-link {
@@ -88,18 +98,21 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--white);
 }
 
+/* ----- ABOUT PAGE ------- */
+
 #about-img, .contact-img {
     width: 100%;
     height: 500px; 
     object-fit: cover; 
 }
 
+
 /* --------- LOGO ----------- */
 
 .logo {
     margin-top: 2rem;
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 2.9rem;
     text-transform: uppercase;
 }
 
@@ -118,10 +131,6 @@ nav {
 .navi li {
     margin: 20px;
     list-style-type: none;
-}
-
-.current {
-    color: var(--primary);
 }
 
 /* -------- MAIN -------- */
