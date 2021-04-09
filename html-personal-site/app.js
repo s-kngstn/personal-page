@@ -6,6 +6,10 @@ const colors = ['#2BBC8A', '#ffd05b', '#5555FF', '#D980FA', '#ff5353'];
   setRandomColors();
 
   setInterval(function(){
+    randomPhoto();
+  }, 6000);
+
+  setInterval(function(){
     setRandomColors();
   }, 4000);
 })();
@@ -27,3 +31,8 @@ Array.from(elements).forEach(function(element){
     setRandomColors();  
   });
 });
+
+function randomPhoto(){
+  let num = Math.floor(Math.random() * 4) + 1;
+  document.getElementById("about-img").src = `images/me${num}.jpg`;
+}
