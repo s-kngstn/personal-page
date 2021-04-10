@@ -133,6 +133,10 @@ nav {
     list-style-type: none;
 }
 
+.nav-link {
+    font-weight: 400;
+}
+
 /* -------- MAIN -------- */
 
 main {
