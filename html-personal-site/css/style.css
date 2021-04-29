@@ -1,7 +1,7 @@
 :root {
   --primary: #2BBC8A;
   --white: #ffffff;
-  --black: #111111;
+  --black: #222;
 }
 
 ::selection {
@@ -158,9 +158,6 @@ main {
     margin-bottom: 1rem;
 }
 
-.project-image {
-    border: 2px solid #000;
-}
 
 /* ------- FOOTER -------- */
 
