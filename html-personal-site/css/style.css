@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
     margin-top: 2rem;
     text-align: center;
-    font-size: 3.3rem;
+    font-size: 3rem;
     text-transform: uppercase;
 }
 
@@ -135,7 +135,7 @@ nav {
 
 .nav-link {
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 /* -------- MAIN -------- */
@@ -156,6 +156,10 @@ main {
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 1rem;
+}
+
+.project-image {
+    border: 2px solid #000;
 }
 
 /* ------- FOOTER -------- */

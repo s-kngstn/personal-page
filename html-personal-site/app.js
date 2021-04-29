@@ -1,5 +1,5 @@
 const elements = document.querySelectorAll("a, hr, .logo");
-const colChangeElements = document.querySelectorAll("hr, .logo, .page-subheading, .bio-toggler");
+const colChangeElements = document.querySelectorAll("hr, .logo, .page-subheading, .bio-toggler, .project-image");
 const colors = ['#2BBC8A', '#ffd05b', '#5555FF', '#D980FA', '#ff5353'];
 
 (function(){
