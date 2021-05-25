@@ -26,7 +26,7 @@ function setRandomColors(){
 }
 
 Array.from(elements).forEach(function(element){
-  element.addEventListener("mouseover", function(){
+  element.addEventListener("mouseenter", function(){
     setRandomColors();  
   });
 });
@@ -57,20 +57,3 @@ function theToggler() {
 toggleButton.addEventListener("mousedown", function(){
   theToggler();
 });
-
-// Menu Fade
-const nav = document.querySelector('.nav');
-
-const handleHover = function(e){
-    if(e.target.classList.contains('nav-link')){
-    const link = e.target;
-    const siblings = link.closest('.nav').querySelectorAll('.nav-link');
-
-    siblings.forEach(element => {
-      if(element !== link) element.style.opacity = this;
-    });
-  }
-}
-/// Passing "argument" into handler
-nav.addEventListener('mouseover', handleHover.bind(0.5));
-nav.addEventListener('mouseout', handleHover.bind(1));
