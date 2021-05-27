@@ -19,6 +19,10 @@
     padding: 0;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .night {
     color: var(--white);
     background-color: var(--black);
