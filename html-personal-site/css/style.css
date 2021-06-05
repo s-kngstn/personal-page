@@ -133,7 +133,7 @@ nav {
 }
 
 .navi li {
-    margin: 20px;
+    margin: 15px;
     list-style-type: none;
 }
 
@@ -141,6 +141,7 @@ nav {
     font-weight: 400;
     font-size: 1em;
 }
+
 
 /* -------- MAIN -------- */
 
