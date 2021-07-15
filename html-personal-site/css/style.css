@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
     margin-top: 2rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-transform: uppercase;
 }
 
@@ -133,13 +133,14 @@ nav {
 }
 
 .navi li {
-    margin: 15px;
+    margin: 17px;
     list-style-type: none;
 }
 
 .nav-link {
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.1em;
+    letter-spacing: 0.2px;
 }
 
 
