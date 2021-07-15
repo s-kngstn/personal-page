@@ -107,7 +107,8 @@ h1, h2, h3, h4, h5, h6 {
 #about-img, .contact-img {
     width: 100%;
     height: 500px; 
-    object-fit: cover; 
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
 }
 
 

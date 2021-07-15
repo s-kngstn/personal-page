@@ -7,7 +7,7 @@ const colors = ['#2BBC8A', '#ffd05b', '#5555FF', '#ff5353'];
 
   setInterval(function(){
     randomPhoto();
-  }, 3000);
+  }, 5000);
 
   setInterval(function(){
     setRandomColors();
