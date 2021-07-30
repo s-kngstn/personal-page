@@ -1,44 +1,46 @@
 const elements = document.querySelectorAll("a, hr, .logo");
-const colChangeElements = document.querySelectorAll(".logo, .page-subheading, .bio-toggler");
-const colors = ['#2BBC8A', '#ffd05b', '#5555FF', '#ff5353'];
+const colChangeElements = document.querySelectorAll(
+  ".logo, .bio-toggler"
+);
+const colors = ["#2BBC8A", "#ffd05b", "#5555FF", "#ff5353"];
 
-(function(){
+(function () {
   setRandomColors();
 
-  setInterval(function(){
+  setInterval(function () {
     randomPhoto();
   }, 5000);
 
-  setInterval(function(){
+  setInterval(function () {
     setRandomColors();
   }, 4000);
 })();
 
-function randomColor(){
+function randomColor() {
   return colors[Math.floor(Math.random() * colors.length)];
 }
 
-function setRandomColors(){
-  Array.from(colChangeElements).forEach(function(element){
+function setRandomColors() {
+  Array.from(colChangeElements).forEach(function (element) {
     element.style.color = randomColor();
     element.style.borderColor = randomColor();
   });
 }
 
-Array.from(elements).forEach(function(element){
-  element.addEventListener("mouseenter", function(){
-    setRandomColors();  
+Array.from(elements).forEach(function (element) {
+  element.addEventListener("mouseenter", function () {
+    setRandomColors();
   });
 });
 
 // Shuffle Photos
 
-function randomPhoto(){
+function randomPhoto() {
   let num = Math.floor(Math.random() * 4) + 1;
   document.getElementById("about-img").src = `images/me${num}.jpg`;
 }
 
-// Bio Toggler 
+// Bio Toggler
 
 const toggleButton = document.getElementById("toggle");
 const longBio = document.getElementById("long-bio");
@@ -54,6 +56,6 @@ function theToggler() {
   }
 }
 
-toggleButton.addEventListener("mousedown", function(){
+toggleButton.addEventListener("mousedown", function () {
   theToggler();
 });
