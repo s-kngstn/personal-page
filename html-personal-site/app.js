@@ -1,6 +1,6 @@
-const elements = document.querySelectorAll("a, hr, .logo");
+const elements = document.querySelectorAll(".nav-link");
 const colChangeElements = document.querySelectorAll(
-  ".logo, .bio-toggler"
+  ".logo, .bio-toggler, .page-subheading"
 );
 const colors = ["#2BBC8A", "#ffd05b", "#5555FF", "#ff5353"];
 
@@ -13,7 +13,7 @@ const colors = ["#2BBC8A", "#ffd05b", "#5555FF", "#ff5353"];
 
   setInterval(function () {
     setRandomColors();
-  }, 4000);
+  }, 10000);
 })();
 
 function randomColor() {
@@ -21,9 +21,10 @@ function randomColor() {
 }
 
 function setRandomColors() {
+  const setColor = randomColor();
   Array.from(colChangeElements).forEach(function (element) {
-    element.style.color = randomColor();
-    element.style.borderColor = randomColor();
+    element.style.color = setColor;
+    element.style.borderColor = setColor;
   });
 }
 
