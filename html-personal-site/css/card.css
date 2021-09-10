@@ -52,16 +52,6 @@ body {
   color: #f8f8f8;
 }
 
-.profession {
-  text-align: center;
-  font-size: 1.7rem;
-  letter-spacing: 1.2px;
-  -webkit-animation-duration: 7s;
-  animation-duration: 7s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
 .icons {
   display: flex;
   flex-direction: row;
