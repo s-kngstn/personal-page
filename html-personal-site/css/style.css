@@ -174,7 +174,6 @@ main {
 .page-subheading {
   font-size: 1.5rem;
   font-weight: 400;
-  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
@@ -228,10 +227,10 @@ footer {
 
 .name {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-transform: uppercase;
   font-weight: 100;
-  letter-spacing: 2px;
+  letter-spacing: 7.5px;
   -webkit-animation-duration: 5s;
   animation-duration: 5s;
   -webkit-animation-fill-mode: both;
