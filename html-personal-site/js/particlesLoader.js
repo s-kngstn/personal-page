@@ -7,7 +7,7 @@ particlesJS("particles-js", {
     color: { value: "#ffffff" },
     shape: {
       type: "circle",
-      stroke: { width: 0, color: "#000000" },
+      stroke: { width: 0, color: "#111111" },
       polygon: { nb_sides: 4 },
       image: { src: "img/github.svg", width: 100, height: 100 },
     },
@@ -29,13 +29,13 @@ particlesJS("particles-js", {
     line_linked: {
       enable: false,
       distance: 0,
-      color: "#000",
+      color: "#111",
       opacity: 0.0,
       width: 0,
     },
     move: {
       enable: true,
-      speed: 1.603412060865523,
+      speed: 1,
       direction: "none",
       random: false,
       straight: false,
